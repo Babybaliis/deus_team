@@ -23,7 +23,7 @@ jobs:
       - name: npm install and test
         run: |
           npm install
-          echo ${{ secret.TEST }}
+          echo ${{ secrets.TEST }}
         env:
           CI: true
 
