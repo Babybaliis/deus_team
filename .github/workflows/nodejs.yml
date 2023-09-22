@@ -40,6 +40,7 @@ jobs:
           port: ${{ secrets.SSH_PORT }}
           script: |
             cd /home/sammy/deus
+            git stash push --include-untracked
             git pull origin master --log
 #            npm run client:build
 #            pm2 restart npm -- start
