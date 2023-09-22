@@ -41,5 +41,6 @@ jobs:
           script: |
             cd /home/sammy/deus
             git pull origin master
+
 #            npm run client:build
 #            pm2 restart npm -- start
